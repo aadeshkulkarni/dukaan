@@ -25,11 +25,11 @@ const Overview = () => {
       <div className="grid grid-cols-12 gap-4">
         <div className="col-span-6 bg-white p-[20px] shadow-sm rounded-md">
           <h3 className="leading-6 font-normal text-overviewFontColor">Online Orders</h3>
-          <h1 className="mt-4 leading-9 text-3xl font-medium">231</h1>
+          <h1 className="mt-4 leading-9 text-xl md:text-3xl font-medium">231</h1>
         </div>
         <div className="col-span-6 bg-white p-[20px] shadow-sm rounded-md">
           <h3 className="leading-6 font-normal text-overviewFontColor">Amount recieved</h3>
-          <h1 className="mt-4 leading-9 text-3xl font-medium">₹23,92,312.19</h1>
+          <h1 className="mt-4 leading-9 text-xl md:text-3xl font-medium">₹23,92,312.19</h1>
         </div>
       </div>
     </section>

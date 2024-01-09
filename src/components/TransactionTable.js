@@ -35,12 +35,12 @@ const TransactionTable = () => {
   return (
     <>
       <div className="flex justify-between items-center mt-5">
-        <DebouncedInput value={""} onChange={(value) => {}} className="px-4 py-2 pl-10 text-sm border border-gray-200 rounded-md w-[248px]" placeholder="Search by order ID..." />
+        <DebouncedInput value={""} onChange={(value) => {}} className="px-4 py-2 pl-10 text-sm border border-gray-200 rounded-md w-[160px] md:w-[248px]" placeholder="Search by order ID..." />
         <div className="flex items-center">
-          <button className="p-2 mr-2 flex items-center border border-gray-300 text-sm">
+          <button className="px-2 p-2 mr-2 flex items-center border border-gray-300 text-sm">
             Sort <img className="mx-2 w-5 h-5" src="./sort.svg" alt="sort" />
           </button>
-          <button className="p-2 flex items-center border border-gray-300">
+          <button className="px-2 p-2 flex items-center border border-gray-300">
             <img className="w-5 h-5" src="./download.svg" alt="download" />
           </button>
         </div>
@@ -180,7 +180,7 @@ function DebouncedInput({ value: initialValue, onChange, debounce = 500, ...prop
   }, [value]);
 
   return (
-    <div className="w-full relative">
+    <div className="md:w-full relative">
       <img src="./search.svg" alt="search" className="absolute top-3 left-3" />
       <input {...props} value={value} onChange={(e) => setValue(e.target.value)} />
     </div>

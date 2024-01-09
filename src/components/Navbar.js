@@ -53,7 +53,7 @@ const navList = [
 
 const Navbar = () => {
   return (
-    <div className="fixed h-screen overflow-hidden w-[200px] bg-primary text-white py-2">
+    <div className="hidden md:block md:fixed h-screen overflow-hidden w-[200px] bg-primary text-white py-2">
       <div className="flex items-center px-4">
         <img src="./brand.svg" alt="brand" />
         <div className="flex flex-col px-4 py-2">
